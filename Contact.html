@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .form {
+            background-color: cornflowerblue;
+            border: 20px solid cornflowerblue;
+            border-radius: 30px;
+            padding: 20px;
+            max-width: 750px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .submit-container {
+            text-align: right;
+        }
+        button {
+            height: 40px;
+            width: 100px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        input[type="text"], textarea {
+            height: 40px;
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea {
+            height: 120px;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <p><p style="color: red;"><b>Contact With Us</b></p></p>
+    <h1>Need Guidance?</h1>
+    <p>We're Here to Help!</p>
+    <p>At N J Watches Pvt. Ltd., we value our customers and strive to provide the best support possible. Whether you have a question about our products, need assistance with an order, or want to provide feedback, we're here to help.</p>
+    <p>For any inquiries or support, feel free to reach out to our customer service team. We're available to assist you with your needs.</p>
+    <div class="form">
+        <h1>Contact Form</h1>
+        <form action="/submit-contact" method="post">
+            <input type="text" placeholder="Name" required="">
+            <input type="text" placeholder="Mobile Number" required="">
+            <input type="text" placeholder="Email Address" required="">
+            <textarea placeholder="Your enquiry" required=""></textarea>
+            <div class="submit-container">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
